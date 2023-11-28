@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="images/me6.jpg" type="Image/x_icon">
+<body>
+    <header>
+        <div class="head">
+        <div>
+        <h1>ISMAIL KYASANKU</h1>
+        <p>Its me IK</p>
+       </div>
+       <div >
+        <img src="images/me6.jpg" alt="photo" class="me">
+       </div>
+    </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="welc">Welcome to My Portfolio</h2>
+        <section id="home">
+        <div id="design">
+            <div id="thx">
+            
+            <h3 class="cv">Thank you for visiting my portfolio website. </h3>
+                <h3 class="cv">My name is Ismail Kyasanku, a student of Information Technology at MULTITECH BUSINESS SCHOOL. </h3>
+                    <h3 class="cv">I consider myself a responsible and orderly person. I am passionate about technology, innovation, leadership and life.</h3>
+             <button class="learn"><a href="About.html" >Learn more</a></button>
+            </div>
+                <div id="slideshow">
+                    <img src="images/beach7.jpg" alt="Image 1" class="active">
+                    <img src="images/me6.jpg" alt="Image 2">
+                    <img src="images/beach9.jpg" alt="Image 3">
+                    <img src="images/2760.jpg" alt="Image 4">
+                    <img src="images/14474.jpg" alt="Image 5">
+                    
+
+                </div>
+        </div>
+        
+
+            
+            </section>
+
+
+        
+    </main>
+
+
+    <footer>
+        <p>&copy; Copyright 2023 @ik</p>
+    </footer>
+    <script>
+        var images = document.querySelectorAll('#slideshow img');
+        var index = 0;
+    
+        setInterval(function() {
+          images[index].classList.remove('active');
+          images[index].classList.add('slideOut');
+    
+          index = (index + 1) % images.length;
+          images[index].classList.remove('slideIn');
+          images[index].classList.add('active');
+          images[index].classList.add('slideIn');
+        }, 5000);
+      </script>
+</body>
+</html>
